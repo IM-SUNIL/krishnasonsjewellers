@@ -398,7 +398,7 @@ export default function CollectionPage() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-playfair font-bold text-gold mb-6">
-              Can't Find What You're Looking For?
+              Can&apos;t Find What You&apos;re Looking For?
             </h2>
             <p className="text-xl font-inter text-gold/80 mb-8 max-w-2xl mx-auto">
               Contact us for custom designs or to check our latest arrivals

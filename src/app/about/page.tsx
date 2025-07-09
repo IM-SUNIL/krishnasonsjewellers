@@ -93,7 +93,7 @@ export default function AboutPage() {
               About Priyanka Jewellers
             </h1>
             <p className="text-xl md:text-2xl font-inter text-gold/90 max-w-3xl mx-auto">
-              Pune's most trusted jeweller for generations, where tradition meets contemporary elegance
+              Pune&apos;s most trusted jeweller for generations, where tradition meets contemporary elegance
             </p>
           </motion.div>
         </div>

@@ -304,7 +304,7 @@ export default function HomePage() {
               What Our Customers Say
             </h2>
             <p className="text-xl font-inter text-gold/80 max-w-3xl mx-auto">
-              Don't just take our word for it - hear from our satisfied customers
+              Don&apos;t just take our word for it - hear from our satisfied customers
             </p>
           </motion.div>
 
@@ -324,7 +324,7 @@ export default function HomePage() {
                   ))}
                 </div>
                 <p className="text-gold/90 font-inter mb-6 italic">
-                  "{testimonial.comment}"
+                  &quot;{testimonial.comment}&quot;
                 </p>
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-gradient-to-br from-gold to-yellow-600 rounded-full flex items-center justify-center mr-4">

@@ -188,7 +188,7 @@ export default function VisitUsPage() {
               Business Hours
             </h2>
             <p className="text-xl font-inter text-gray-700 dark:text-gold/80">
-              We're open 7 days a week for your convenience
+              We&apos;re open 7 days a week for your convenience
             </p>
           </motion.div>
 
