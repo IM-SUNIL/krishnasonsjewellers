@@ -7,21 +7,18 @@ const categories = [
   { id: 'all', name: 'All Collections', icon: Crown },
   { id: 'gold', name: 'Gold Jewellery', icon: Crown },
   { id: 'diamond', name: 'Diamond Collection', icon: Gem },
-  { id: 'bridal', name: 'Bridal Sets', icon: Heart },
-  { id: 'temple', name: 'Temple Jewellery', icon: Sparkles },
-  { id: 'everyday', name: 'Everyday Wear', icon: Star },
-  { id: 'kids', name: 'Kids & Men\'s', icon: Crown }
+  { id: 'bridal', name: 'Bridal Jewellery', icon: Heart },
+  { id: 'daily', name: 'Daily Wear', icon: Star },
+  { id: 'custom', name: 'Custom Orders', icon: Sparkles },
 ];
 
 const products = [
   // Gold Jewellery
   {
     id: 1,
-    name: "Traditional Gold Necklace",
+    name: "Classic Gold Necklace",
     category: "gold",
-    description: "Elegant 22K gold necklace with traditional design",
-    price: "₹45,000",
-    weight: "10.5 grams",
+    description: "Timeless 22K gold necklace with intricate design",
     image: "/gallery/gold-necklace.jpg",
     featured: true
   },
@@ -30,136 +27,53 @@ const products = [
     name: "Gold Bangles Set",
     category: "gold",
     description: "Set of 4 beautiful gold bangles",
-    price: "₹32,000",
-    weight: "8.2 grams",
     image: "/gallery/gold-bangles.jpg",
-    featured: false
-  },
-  {
-    id: 3,
-    name: "Gold Earrings",
-    category: "gold",
-    description: "Traditional gold earrings with stone work",
-    price: "₹18,500",
-    weight: "4.8 grams",
-    image: "/gallery/gold-earrings.jpg",
     featured: false
   },
   // Diamond Collection
   {
-    id: 4,
+    id: 3,
     name: "Diamond Ring",
     category: "diamond",
     description: "Solitaire diamond ring in white gold setting",
-    price: "₹85,000",
-    weight: "2.5 carats",
     image: "/gallery/diamond-ring.jpg",
     featured: true
   },
   {
-    id: 5,
+    id: 4,
     name: "Diamond Necklace",
     category: "diamond",
     description: "Elegant diamond necklace with pendant",
-    price: "₹1,25,000",
-    weight: "5.2 carats",
     image: "/gallery/diamond-necklace.jpg",
     featured: false
   },
+  // Bridal Jewellery
   {
-    id: 6,
-    name: "Diamond Earrings",
-    category: "diamond",
-    description: "Diamond stud earrings in white gold",
-    price: "₹65,000",
-    weight: "3.1 carats",
-    image: "/gallery/diamond-earrings.jpg",
-    featured: false
-  },
-  // Bridal Sets
-  {
-    id: 7,
-    name: "Complete Bridal Set",
+    id: 5,
+    name: "Bridal Set",
     category: "bridal",
     description: "Complete bridal jewellery set with necklace, earrings, and bangles",
-    price: "₹2,50,000",
-    weight: "45 grams",
     image: "/gallery/bridal-set.jpg",
     featured: true
   },
+  // Daily Wear
   {
-    id: 8,
-    name: "Bridal Necklace",
-    category: "bridal",
-    description: "Heavy bridal necklace with traditional design",
-    price: "₹1,80,000",
-    weight: "32 grams",
-    image: "/gallery/bridal-necklace.jpg",
-    featured: false
-  },
-  // Temple Jewellery
-  {
-    id: 9,
-    name: "Temple Necklace",
-    category: "temple",
-    description: "Traditional temple jewellery necklace",
-    price: "₹95,000",
-    weight: "28 grams",
-    image: "/gallery/temple-necklace.jpg",
-    featured: true
-  },
-  {
-    id: 10,
-    name: "Temple Earrings",
-    category: "temple",
-    description: "Heavy temple earrings with traditional motifs",
-    price: "₹45,000",
-    weight: "15 grams",
-    image: "/gallery/temple-earrings.jpg",
-    featured: false
-  },
-  // Everyday Wear
-  {
-    id: 11,
-    name: "Light Gold Chain",
-    category: "everyday",
+    id: 6,
+    name: "Daily Gold Chain",
+    category: "daily",
     description: "Lightweight gold chain for daily wear",
-    price: "₹22,000",
-    weight: "5.5 grams",
-    image: "/gallery/everyday-chain.jpg",
+    image: "/gallery/daily-chain.jpg",
     featured: false
   },
+  // Custom Orders
   {
-    id: 12,
-    name: "Gold Ring",
-    category: "everyday",
-    description: "Simple and elegant gold ring",
-    price: "₹15,000",
-    weight: "3.2 grams",
-    image: "/gallery/everyday-ring.jpg",
+    id: 7,
+    name: "Custom Name Pendant",
+    category: "custom",
+    description: "Personalized gold pendant with your name",
+    image: "/gallery/custom-pendant.jpg",
     featured: false
   },
-  // Kids & Men's
-  {
-    id: 13,
-    name: "Kids Gold Chain",
-    category: "kids",
-    description: "Beautiful gold chain for children",
-    price: "₹12,000",
-    weight: "2.8 grams",
-    image: "/gallery/kids-chain.jpg",
-    featured: false
-  },
-  {
-    id: 14,
-    name: "Men's Gold Ring",
-    category: "kids",
-    description: "Elegant gold ring for men",
-    price: "₹28,000",
-    weight: "7.5 grams",
-    image: "/gallery/mens-ring.jpg",
-    featured: false
-  }
 ];
 
 export default function CollectionPage() {
@@ -214,21 +128,19 @@ export default function CollectionPage() {
             </div>
 
             {/* Category Filter */}
-            <div className="flex flex-wrap gap-2">
-              {categories.map((category) => (
-                <button
-                  key={category.id}
-                  onClick={() => setSelectedCategory(category.id)}
-                  className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-inter transition-all duration-300 ${
-                    selectedCategory === category.id
-                      ? 'bg-maroon text-gold shadow-lg'
-                      : 'bg-white dark:bg-[#181010] text-maroon dark:text-gold border border-gold/20 hover:bg-gold hover:text-maroon'
-                  }`}
-                >
-                  <category.icon size={16} />
-                  {category.name}
-                </button>
-              ))}
+            <div className="flex flex-wrap gap-4 justify-center mb-10">
+              {["gold", "diamond", "bridal"].map((cat) => {
+                const catObj = categories.find((c) => c.id === cat);
+                return (
+                  <button
+                    key={cat}
+                    onClick={() => setSelectedCategory(cat)}
+                    className={`px-6 py-2 rounded-full font-inter font-semibold border-2 transition-all duration-300 shadow-luxury ${selectedCategory === cat ? "bg-gold text-maroon border-gold" : "bg-white text-maroon border-maroon hover:bg-gold hover:text-maroon"}`}
+                  >
+                    {catObj?.name}
+                  </button>
+                );
+              })}
             </div>
           </div>
         </div>

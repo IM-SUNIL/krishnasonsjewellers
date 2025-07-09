@@ -107,9 +107,11 @@ export default function HomePage() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        {/* Background with luxury gradient */}
-        <div className="absolute inset-0 bg-gradient-luxury opacity-90"></div>
-        
+        {/* Background with luxury gradient and jewellery showcase image */}
+        <div className="absolute inset-0">
+          <img src="/gallery/showcase.jpg" alt="Jewellery Showcase" className="w-full h-full object-cover object-center opacity-60" />
+          <div className="absolute inset-0 bg-gradient-luxury opacity-90"></div>
+        </div>
         {/* Animated background elements */}
         <div className="absolute inset-0">
           <motion.div
@@ -137,7 +139,6 @@ export default function HomePage() {
             }}
           />
         </div>
-
         {/* Hero Content */}
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <motion.div
@@ -145,17 +146,16 @@ export default function HomePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-5xl md:text-7xl font-playfair font-bold mb-6 leading-tight">
-              Dwarkadheesh Jewellers
+            <h1 className="text-5xl md:text-7xl font-playfair font-bold mb-6 leading-tight drop-shadow-lg">
+              Krishna Sons Jewellers
             </h1>
-            <p className="text-xl md:text-2xl font-inter mb-8 text-gold/90">
-              We Sell the most beautiful forms of Memories
+            <p className="text-xl md:text-2xl font-inter mb-8 text-gold/90 drop-shadow">
+              Crafting Memories Since 1935
             </p>
-            <p className="text-lg md:text-xl mb-12 text-white/90 font-inter max-w-2xl mx-auto">
-              Shop No. G-5 G-6, Plot No. 2, H.L Galeria, Sector 12, Ashirwad Chowk, Dwarka, New Delhi, Delhi 110075. <br />
-              Phone: 076830 07443
+            <p className="text-lg md:text-xl mb-12 text-white/90 font-inter max-w-2xl mx-auto drop-shadow">
+              F-26-A, Radial Road Number 1, Block F, Connaught Place, New Delhi, Delhi 110001.<br />
+              Phone: 098100 39192
             </p>
-            
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <motion.button
                 onClick={() => scrollToSection('collections')}
@@ -166,7 +166,7 @@ export default function HomePage() {
                 Explore Our Collection
               </motion.button>
               <motion.a
-                href="tel:07683007443"
+                href="tel:09810039192"
                 className="btn-luxury bg-transparent border-2 border-gold text-gold px-8 py-4 rounded-full text-lg font-inter font-semibold hover:bg-gold hover:text-maroon transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -177,7 +177,6 @@ export default function HomePage() {
             </div>
           </motion.div>
         </div>
-
         {/* Scroll indicator */}
         <motion.div
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2"

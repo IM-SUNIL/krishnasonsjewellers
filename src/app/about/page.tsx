@@ -90,10 +90,10 @@ export default function AboutPage() {
             className="text-center"
           >
             <h1 className="text-5xl md:text-6xl font-playfair font-bold mb-6">
-              About Dwarkadheesh Jewellers
+              About Krishna Sons Jewellers
             </h1>
             <p className="text-xl md:text-2xl font-inter text-gold/90 max-w-3xl mx-auto">
-              New Delhi&rsquo;s most trusted jeweller for generations, where tradition meets contemporary elegance
+              Connaught Place’s legacy jeweller, trusted since 1935
             </p>
           </motion.div>
         </div>
@@ -114,20 +114,19 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-6 text-lg font-inter text-gray-700 dark:text-gold/80">
                 <p>
-                  Founded in [Year], Dwarkadheesh Jewellers began as a small family-owned jewellery store with a simple mission: to provide authentic, high-quality jewellery to the people of Dwarka, New Delhi.
+                  Established in 1935, Krishna Sons Jewellers has been a beacon of trust and craftsmanship in the heart of Connaught Place, New Delhi. For generations, we have been dedicated to creating timeless jewellery that celebrates life’s most precious moments.
                 </p>
                 <p>
-                  Over the years, we have grown from a modest shop to one of New Delhi&rsquo;s most trusted jewellers, serving thousands of satisfied customers and creating beautiful memories through our exquisite jewellery pieces.
+                  Our legacy is built on a foundation of integrity, quality, and hallmark certification. Every piece is crafted with meticulous attention to detail, blending traditional artistry with modern elegance.
                 </p>
                 <p>
-                  We specialize in gold, diamond, and custom bridal jewellery, offering BIS Hallmark assurance on all our products. Our expert craftsmen and designers work tirelessly to create pieces that blend traditional Indian aesthetics with contemporary designs.
+                  As a BIS Hallmark Certified jeweller, we guarantee purity and authenticity in every creation. Our commitment to excellence has earned us the trust of countless families across generations.
                 </p>
                 <p>
-                  Today, located at Shop No. G-5 G-6, Plot No. 2, H.L Galeria, Sector 12, Ashirwad Chowk, Dwarka, New Delhi, we continue to uphold the values of trust, authenticity, and excellence that have been the cornerstone of our success.
+                  Visit us at F-26-A, Radial Road Number 1, Block F, Connaught Place, New Delhi, and experience the heritage of Krishna Sons Jewellers.
                 </p>
               </div>
             </motion.div>
-
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -137,12 +136,12 @@ export default function AboutPage() {
             >
               <div className="bg-gradient-to-br from-gold/20 to-maroon/20 rounded-2xl p-8 h-96 flex items-center justify-center">
                 <div className="text-center">
-                  <Crown size={80} className="text-maroon mx-auto mb-6" />
+                  <img src="/gallery/vintage-placeholder.jpg" alt="Vintage Krishna Sons Jewellers" className="mx-auto mb-6 rounded-lg shadow-lg object-cover w-40 h-40" />
                   <h3 className="text-2xl font-playfair font-bold text-maroon dark:text-gold mb-4">
-                    25+ Years of Excellence
+                    Trusted Since 1935
                   </h3>
                   <p className="text-gray-600 dark:text-gold/70 font-inter">
-                    Trusted by generations of customers
+                    Generations of trust, quality, and hallmark certification
                   </p>
                 </div>
               </div>

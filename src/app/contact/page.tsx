@@ -8,23 +8,23 @@ const contactMethods = [
     icon: Phone,
     title: 'Call Us',
     description: 'Speak directly with our jewellery experts',
-    value: '076830 07443',
-    action: 'tel:07683007443',
+    value: '098100 39192',
+    action: 'tel:09810039192',
     color: 'bg-green-500'
   },
   {
     icon: MessageCircle,
     title: 'WhatsApp',
     description: 'Send us a message on WhatsApp',
-    value: '076830 07443',
-    action: 'https://wa.me/917683007443',
+    value: '098100 39192',
+    action: 'https://wa.me/919810039192',
     color: 'bg-green-600'
   },
   {
     icon: MapPin,
     title: 'Visit Us',
-    description: 'Visit our store in H.L Galeria, Dwarka',
-    value: 'Shop No. G-5 G-6, Plot No. 2, H.L Galeria, Sector 12, Ashirwad Chowk, Dwarka, New Delhi',
+    description: 'Visit our store in Connaught Place',
+    value: 'F-26-A, Radial Road Number 1, Block F, Connaught Place, New Delhi',
     action: '/visit-us',
     color: 'bg-maroon'
   },
@@ -32,7 +32,7 @@ const contactMethods = [
     icon: Clock,
     title: 'Business Hours',
     description: 'We\'re open 7 days a week',
-    value: '11:00 AM - 9:00 PM',
+    value: '11:00 AM - 8:00 PM',
     action: '/visit-us',
     color: 'bg-gold'
   }
@@ -93,10 +93,10 @@ export default function ContactPage() {
             className="text-center"
           >
             <h1 className="text-5xl md:text-6xl font-playfair font-bold mb-6">
-              Contact Dwarkadheesh Jewellers
+              Contact Krishna Sons Jewellers
             </h1>
             <p className="text-xl md:text-2xl font-inter text-gold/90 max-w-3xl mx-auto">
-              Get in touch with us for expert jewellery consultation and personalized service in Dwarka, New Delhi
+              Get in touch with us for expert jewellery consultation and personalized service in New Delhi
             </p>
           </motion.div>
         </div>
@@ -444,6 +444,25 @@ export default function ContactPage() {
               </motion.a>
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Find Us on the Map */}
+      <section className="py-16 bg-white dark:bg-[#181010]">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-playfair font-bold text-maroon dark:text-gold mb-6 text-center">Find Us on the Map</h2>
+          <div className="rounded-2xl overflow-hidden shadow-luxury">
+            <iframe
+              src="https://www.google.com/maps?q=F-26-A,+Radial+Road+Number+1,+Block+F,+Connaught+Place,+New+Delhi,+Delhi+110001&output=embed"
+              width="100%"
+              height="350"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Krishna Sons Jewellers Location"
+            ></iframe>
+          </div>
         </div>
       </section>
     </div>

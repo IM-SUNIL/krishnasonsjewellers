@@ -7,64 +7,22 @@ const categories = [
   { id: 'all', name: 'All Items', icon: Crown },
   { id: 'gold', name: 'Gold Jewellery', icon: Crown },
   { id: 'diamond', name: 'Diamond Collection', icon: Gem },
-  { id: 'bridal', name: 'Bridal Sets', icon: Heart },
-  { id: 'temple', name: 'Temple Jewellery', icon: Sparkles },
-  { id: 'everyday', name: 'Everyday Wear', icon: Star }
+  { id: 'bridal', name: 'Bridal Jewellery', icon: Heart },
+  { id: 'daily', name: 'Daily Wear', icon: Star },
+  { id: 'custom', name: 'Custom Orders', icon: Sparkles },
 ];
 
 const galleryItems = [
-  // Gold Jewellery
   {
     id: 1,
-    title: "Traditional Gold Necklace",
+    title: "Classic Gold Necklace",
     category: "gold",
-    description: "Elegant 22K gold necklace with traditional design",
+    description: "Timeless 22K gold necklace with intricate design",
     image: "/gallery/gold-necklace-1.jpg",
     featured: true
   },
   {
     id: 2,
-    title: "Gold Bangles Set",
-    category: "gold",
-    description: "Set of 4 beautiful gold bangles",
-    image: "/gallery/gold-bangles-1.jpg",
-    featured: false
-  },
-  {
-    id: 3,
-    title: "Gold Earrings",
-    category: "gold",
-    description: "Traditional gold earrings with stone work",
-    image: "/gallery/gold-earrings-1.jpg",
-    featured: false
-  },
-  {
-    id: 4,
-    title: "Gold Chain",
-    category: "gold",
-    description: "Heavy gold chain with traditional design",
-    image: "/gallery/gold-chain-1.jpg",
-    featured: false
-  },
-  {
-    id: 5,
-    title: "Gold Ring",
-    category: "gold",
-    description: "Beautiful gold ring with stone work",
-    image: "/gallery/gold-ring-1.jpg",
-    featured: false
-  },
-  {
-    id: 6,
-    title: "Gold Pendant",
-    category: "gold",
-    description: "Elegant gold pendant design",
-    image: "/gallery/gold-pendant-1.jpg",
-    featured: false
-  },
-  // Diamond Collection
-  {
-    id: 7,
     title: "Diamond Ring",
     category: "diamond",
     description: "Solitaire diamond ring in white gold setting",
@@ -72,112 +30,29 @@ const galleryItems = [
     featured: true
   },
   {
-    id: 8,
-    title: "Diamond Necklace",
-    category: "diamond",
-    description: "Elegant diamond necklace with pendant",
-    image: "/gallery/diamond-necklace-1.jpg",
-    featured: false
-  },
-  {
-    id: 9,
-    title: "Diamond Earrings",
-    category: "diamond",
-    description: "Diamond stud earrings in white gold",
-    image: "/gallery/diamond-earrings-1.jpg",
-    featured: false
-  },
-  {
-    id: 10,
-    title: "Diamond Bracelet",
-    category: "diamond",
-    description: "Beautiful diamond bracelet design",
-    image: "/gallery/diamond-bracelet-1.jpg",
-    featured: false
-  },
-  // Bridal Sets
-  {
-    id: 11,
-    title: "Complete Bridal Set",
+    id: 3,
+    title: "Bridal Set",
     category: "bridal",
     description: "Complete bridal jewellery set with necklace, earrings, and bangles",
     image: "/gallery/bridal-set-1.jpg",
     featured: true
   },
   {
-    id: 12,
-    title: "Bridal Necklace",
-    category: "bridal",
-    description: "Heavy bridal necklace with traditional design",
-    image: "/gallery/bridal-necklace-1.jpg",
-    featured: false
-  },
-  {
-    id: 13,
-    title: "Bridal Earrings",
-    category: "bridal",
-    description: "Traditional bridal earrings",
-    image: "/gallery/bridal-earrings-1.jpg",
-    featured: false
-  },
-  {
-    id: 14,
-    title: "Bridal Bangles",
-    category: "bridal",
-    description: "Set of bridal bangles",
-    image: "/gallery/bridal-bangles-1.jpg",
-    featured: false
-  },
-  // Temple Jewellery
-  {
-    id: 15,
-    title: "Temple Necklace",
-    category: "temple",
-    description: "Traditional temple jewellery necklace",
-    image: "/gallery/temple-necklace-1.jpg",
-    featured: true
-  },
-  {
-    id: 16,
-    title: "Temple Earrings",
-    category: "temple",
-    description: "Heavy temple earrings with traditional motifs",
-    image: "/gallery/temple-earrings-1.jpg",
-    featured: false
-  },
-  {
-    id: 17,
-    title: "Temple Bangles",
-    category: "temple",
-    description: "Traditional temple bangles",
-    image: "/gallery/temple-bangles-1.jpg",
-    featured: false
-  },
-  // Everyday Wear
-  {
-    id: 18,
-    title: "Light Gold Chain",
-    category: "everyday",
+    id: 4,
+    title: "Daily Gold Chain",
+    category: "daily",
     description: "Lightweight gold chain for daily wear",
-    image: "/gallery/everyday-chain-1.jpg",
+    image: "/gallery/daily-chain-1.jpg",
     featured: false
   },
   {
-    id: 19,
-    title: "Gold Ring",
-    category: "everyday",
-    description: "Simple and elegant gold ring",
-    image: "/gallery/everyday-ring-1.jpg",
+    id: 5,
+    title: "Custom Name Pendant",
+    category: "custom",
+    description: "Personalized gold pendant with your name",
+    image: "/gallery/custom-pendant-1.jpg",
     featured: false
   },
-  {
-    id: 20,
-    title: "Gold Earrings",
-    category: "everyday",
-    description: "Light gold earrings for daily wear",
-    image: "/gallery/everyday-earrings-1.jpg",
-    featured: false
-  }
 ];
 
 export default function GalleryPage() {

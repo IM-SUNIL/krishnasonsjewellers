@@ -48,7 +48,7 @@ function DarkModeToggle() {
 function WhatsAppWidget() {
   return (
     <motion.a
-      href="https://wa.me/917683007443" // <-- Update to Dwarkadheesh Jewellers number
+      href="https://wa.me/919810039192" // Krishna Sons Jewellers WhatsApp
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition-all duration-300 hover:scale-110"
@@ -71,15 +71,15 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* SEO Meta Tags for Dwarkadheesh Jewellers */}
-        <title>Dwarkadheesh Jewellers - We Sell the most beautiful forms of Memories</title>
-        <meta name="description" content="Dwarkadheesh Jewellers, Dwarka, New Delhi - Premium Gold, Diamond, and Bridal Jewellery. Trusted since establishment. Shop No. G-5 G-6, Plot No. 2, H.L Galeria, Sector 12, Ashirwad Chowk, Dwarka, New Delhi, Delhi 110075. Phone: 076830 07443" />
-        <meta name="keywords" content="jewellery, gold, diamond, bridal, Dwarka, New Delhi, Dwarkadheesh Jewellers, HL Galeria" />
-        <meta name="author" content="Dwarkadheesh Jewellers" />
-        <meta property="og:title" content="Dwarkadheesh Jewellers - We Sell the most beautiful forms of Memories" />
-        <meta property="og:description" content="Premium Gold, Diamond, and Bridal Jewellery in Dwarka, New Delhi. Trusted since establishment." />
+        {/* SEO Meta Tags for Krishna Sons Jewellers */}
+        <title>Krishna Sons Jewellers - Trusted Jewellers Since Generations | Connaught Place, New Delhi</title>
+        <meta name="description" content="Krishna Sons Jewellers, Connaught Place, New Delhi - Hallmark Certified Gold, Diamond, Bridal, and Custom Jewellery. Trusted since 1935. F-26-A, Radial Road Number 1, Block F, Connaught Place, New Delhi, Delhi 110001. Phone: 098100 39192" />
+        <meta name="keywords" content="jewellery, gold, diamond, hallmark, bridal, Connaught Place, New Delhi, Krishna Sons Jewellers, custom jewellery" />
+        <meta name="author" content="Krishna Sons Jewellers" />
+        <meta property="og:title" content="Krishna Sons Jewellers - Trusted Jewellers Since Generations" />
+        <meta property="og:description" content="Hallmark Certified Gold, Diamond, Bridal, and Custom Jewellery in Connaught Place, New Delhi. Trusted since 1935." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://dwarkadheeshjewellers.com" />
+        <meta property="og:url" content="https://krishnasonsjewellers.com" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -90,11 +90,11 @@ export default function RootLayout({
           <nav className="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
             <Link href="/" className="flex items-center gap-3 group">
               <div className="w-10 h-10 bg-gradient-to-br from-gold to-yellow-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                <span className="text-maroon font-bold text-lg">DJ</span>
+                <span className="text-maroon font-bold text-lg">KSJ</span>
               </div>
               <div>
-                <span className="text-2xl font-playfair font-bold text-maroon dark:text-gold tracking-wide">Dwarkadheesh Jewellers</span>
-                <p className="text-xs text-gray-600 dark:text-gold/70 font-inter">We Sell the most beautiful forms of Memories</p>
+                <span className="text-2xl font-playfair font-bold text-maroon dark:text-gold tracking-wide">Krishna Sons Jewellers</span>
+                <p className="text-xs text-gray-600 dark:text-gold/70 font-inter">Trusted Jewellers Since Generations</p>
               </div>
             </Link>
             <ul className="hidden md:flex gap-8 text-lg font-medium font-inter">
@@ -121,9 +121,9 @@ export default function RootLayout({
             </ul>
             <div className="flex items-center gap-4">
               {/* Update phone number for quick call */}
-              <a href="tel:07683007443" className="hidden sm:flex items-center gap-2 text-maroon dark:text-gold hover:text-gold transition-colors duration-300">
+              <a href="tel:09810039192" className="hidden sm:flex items-center gap-2 text-maroon dark:text-gold hover:text-gold transition-colors duration-300">
                 <Phone size={18} />
-                <span className="font-inter font-medium">076830 07443</span>
+                <span className="font-inter font-medium">098100 39192</span>
               </a>
               <DarkModeToggle />
             </div>
@@ -135,15 +135,15 @@ export default function RootLayout({
           <div className="max-w-7xl mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
               <div>
-                <h3 className="text-2xl font-playfair font-bold mb-4">Dwarkadheesh Jewellers</h3>
-                <p className="text-gold/80 font-inter mb-4">We Sell the most beautiful forms of Memories</p>
+                <h3 className="text-2xl font-playfair font-bold mb-4">Krishna Sons Jewellers</h3>
+                <p className="text-gold/80 font-inter mb-4">Trusted Jewellers Since Generations</p>
                 <div className="flex gap-4">
                   {/* Update social links as needed */}
-                  <a href="#" className="text-gold hover:text-white transition-colors duration-300">
+                  <a href="https://instagram.com/krishnasonsjewellers" target="_blank" rel="noopener noreferrer" className="text-gold hover:text-white transition-colors duration-300">
                     <Instagram size={24} />
                   </a>
-                  <a href="#" className="text-gold hover:text-white transition-colors duration-300">
-                    <Facebook size={24} />
+                  <a href="https://wa.me/919810039192" target="_blank" rel="noopener noreferrer" className="text-gold hover:text-white transition-colors duration-300">
+                    <MessageCircle size={24} />
                   </a>
                 </div>
               </div>
@@ -161,31 +161,31 @@ export default function RootLayout({
                 <div className="space-y-3 font-inter">
                   <div className="flex items-center gap-2 text-gold/80">
                     <MapPin size={16} />
-                    <span>Shop No. G-5 G-6, Plot No. 2, H.L Galeria, Sector 12, Ashirwad Chowk, Dwarka, New Delhi, Delhi 110075</span>
+                    <span>F-26-A, Radial Road Number 1, Block F, Connaught Place, New Delhi, Delhi 110001</span>
                   </div>
                   <div className="flex items-center gap-2 text-gold/80">
                     <Phone size={16} />
-                    <a href="tel:07683007443" className="hover:text-gold transition-colors duration-300">076830 07443</a>
+                    <a href="tel:09810039192" className="hover:text-gold transition-colors duration-300">098100 39192</a>
                   </div>
                   <div className="flex items-center gap-2 text-gold/80">
                     <Clock size={16} />
-                    <span>Mon-Sun: 11AM-9PM</span>
+                    <span>Mon-Sun: 11AM-8PM</span>
                   </div>
                 </div>
               </div>
               <div>
                 <h4 className="text-lg font-playfair font-semibold mb-4">Trust & Quality</h4>
                 <div className="space-y-2 font-inter text-gold/80">
-                  <p>✓ BIS Hallmark Certified</p>
-                  <p>✓ Years of Trust</p>
-                  <p>✓ Custom Designs</p>
+                  <p>✓ Hallmark Certified</p>
+                  <p>✓ Since 1935</p>
+                  <p>✓ Custom Orders</p>
                   <p>✓ Expert Consultation</p>
                 </div>
               </div>
             </div>
             <div className="border-t border-gold/20 pt-8 text-center">
               <p className="font-inter text-gold/80">
-                Dwarkadheesh Jewellers © {new Date().getFullYear()} • Website designed by Sunil Singh 😎
+                © Since 1935 - Krishna Sons Jewellers | All rights reserved
               </p>
             </div>
           </div>
