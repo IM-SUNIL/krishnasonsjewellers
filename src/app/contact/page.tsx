@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { Phone, MapPin, Clock, MessageCircle, Mail, Send, CheckCircle } from 'lucide-react';
+import { Phone, MapPin, Clock, MessageCircle, Send, CheckCircle } from 'lucide-react';
 
 const contactMethods = [
   {
@@ -167,7 +167,7 @@ export default function ContactPage() {
               Send Us a Message
             </h2>
             <p className="text-xl font-inter text-gray-700 dark:text-gold/80 max-w-2xl mx-auto">
-              Fill out the form below and we'll get back to you as soon as possible
+              Fill out the form below and we&apos;ll get back to you as soon as possible
             </p>
           </motion.div>
 
@@ -189,7 +189,7 @@ export default function ContactPage() {
                   Message Sent Successfully!
                 </h3>
                 <p className="text-gray-600 dark:text-gold/70 font-inter">
-                  Thank you for contacting us. We'll get back to you within 24 hours.
+                  Thank you for contacting us. We&apos;ll get back to you within 24 hours.
                 </p>
               </motion.div>
             ) : (

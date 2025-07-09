@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { Crown, Sparkles, Gem, Heart, Award, Users, Clock, Shield } from 'lucide-react';
+import { Crown, Gem, Heart, Award, Users, Clock, Shield } from 'lucide-react';
 
 const milestones = [
   {
@@ -117,7 +117,7 @@ export default function AboutPage() {
                   Founded in 1998, Priyanka Jewellers began as a small family-owned jewellery store with a simple mission: to provide authentic, high-quality jewellery to the people of Pune.
                 </p>
                 <p>
-                  Over the past 25+ years, we have grown from a modest shop to one of Pune's most trusted jewellers, serving thousands of satisfied customers and creating beautiful memories through our exquisite jewellery pieces.
+                  Over the past 25+ years, we have grown from a modest shop to one of Pune&apos;s most trusted jewellers, serving thousands of satisfied customers and creating beautiful memories through our exquisite jewellery pieces.
                 </p>
                 <p>
                   We specialize in gold, diamond, and custom bridal jewellery, offering BIS Hallmark assurance on all our products. Our expert craftsmen and designers work tirelessly to create pieces that blend traditional Indian aesthetics with contemporary designs.

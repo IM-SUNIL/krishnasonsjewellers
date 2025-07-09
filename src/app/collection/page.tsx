@@ -1,8 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import Link from 'next/link';
-import { Crown, Gem, Heart, Sparkles, Star, Phone, MessageCircle, Filter, Search } from 'lucide-react';
+import { Crown, Gem, Heart, Sparkles, Star, Phone, MessageCircle, Search } from 'lucide-react';
 
 const categories = [
   { id: 'all', name: 'All Collections', icon: Crown },

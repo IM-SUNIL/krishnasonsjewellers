@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { ChevronDown, Star, Phone, MapPin, Clock, Instagram, Facebook, MessageCircle, Sparkles, Crown, Gem, Heart } from 'lucide-react';
+import { ChevronDown, Star, Phone, MapPin, Clock, MessageCircle, Sparkles, Crown, Gem, Heart } from 'lucide-react';
 
 const collections = [
   {
@@ -152,7 +152,7 @@ export default function HomePage() {
               Where Elegance Meets Excellence
             </p>
             <p className="text-lg md:text-xl mb-12 text-white/90 font-inter max-w-2xl mx-auto">
-              Pune's most trusted jeweller for generations. Specializing in gold, diamond, and custom bridal jewellery with BIS Hallmark assurance.
+              Pune&apos;s most trusted jeweller for generations. Specializing in gold, diamond, and custom bridal jewellery with BIS Hallmark assurance.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

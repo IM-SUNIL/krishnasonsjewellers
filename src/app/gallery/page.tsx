@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { Crown, Gem, Heart, Sparkles, Star, X, ChevronLeft, ChevronRight, Filter } from 'lucide-react';
+import { Crown, Gem, Heart, Sparkles, Star, X, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const categories = [
   { id: 'all', name: 'All Items', icon: Crown },
