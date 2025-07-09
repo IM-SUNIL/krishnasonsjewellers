@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { Crown, Gem, Heart, Award, Users, Clock, Shield } from 'lucide-react';
+import { Gem, Heart, Award, Users, Clock, Shield } from 'lucide-react';
 
 const milestones = [
   {

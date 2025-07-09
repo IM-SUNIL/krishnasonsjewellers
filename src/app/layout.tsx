@@ -4,7 +4,7 @@ import "./globals.css";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Phone, MapPin, Clock, Instagram, Facebook, MessageCircle } from "lucide-react";
+import { Phone, MapPin, Clock, Instagram, MessageCircle } from "lucide-react";
 
 // Update font imports and variables as needed for luxury look
 const playfair = Playfair_Display({
