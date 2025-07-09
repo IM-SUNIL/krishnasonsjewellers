@@ -191,7 +191,7 @@ export default function CollectionPage() {
               Our Collections
             </h1>
             <p className="text-xl md:text-2xl font-inter text-gold/90 max-w-3xl mx-auto">
-              Discover our exquisite range of jewellery crafted with precision and passion
+              Discover our exquisite range of Gold, Diamond, and Bridal Jewellery in Dwarka, New Delhi
             </p>
           </motion.div>
         </div>

@@ -8,23 +8,23 @@ const contactMethods = [
     icon: Phone,
     title: 'Call Us',
     description: 'Speak directly with our jewellery experts',
-    value: '8888088140',
-    action: 'tel:8888088140',
+    value: '076830 07443',
+    action: 'tel:07683007443',
     color: 'bg-green-500'
   },
   {
     icon: MessageCircle,
     title: 'WhatsApp',
     description: 'Send us a message on WhatsApp',
-    value: '8888088140',
-    action: 'https://wa.me/918888088140',
+    value: '076830 07443',
+    action: 'https://wa.me/917683007443',
     color: 'bg-green-600'
   },
   {
     icon: MapPin,
     title: 'Visit Us',
-    description: 'Visit our store in Vision One Mall',
-    value: 'Vision One Mall, Tathawade, Pune',
+    description: 'Visit our store in H.L Galeria, Dwarka',
+    value: 'Shop No. G-5 G-6, Plot No. 2, H.L Galeria, Sector 12, Ashirwad Chowk, Dwarka, New Delhi',
     action: '/visit-us',
     color: 'bg-maroon'
   },
@@ -93,10 +93,10 @@ export default function ContactPage() {
             className="text-center"
           >
             <h1 className="text-5xl md:text-6xl font-playfair font-bold mb-6">
-              Contact Us
+              Contact Dwarkadheesh Jewellers
             </h1>
             <p className="text-xl md:text-2xl font-inter text-gold/90 max-w-3xl mx-auto">
-              Get in touch with us for expert jewellery consultation and personalized service
+              Get in touch with us for expert jewellery consultation and personalized service in Dwarka, New Delhi
             </p>
           </motion.div>
         </div>
@@ -343,8 +343,7 @@ export default function ContactPage() {
                     Store Address
                   </h3>
                   <p className="text-gray-700 dark:text-gold/80 font-inter leading-relaxed">
-                    Vision One Mall, Bhumkar Chowk Road,<br />
-                    Tathawade, Pune, Maharashtra 411057
+                    Shop No. G-5 G-6, Plot No. 2, H.L Galeria, Sector 12, Ashirwad Chowk, Dwarka, New Delhi, Delhi 110075
                   </p>
                 </div>
               </div>
@@ -372,10 +371,10 @@ export default function ContactPage() {
                     Phone Number
                   </h3>
                   <a 
-                    href="tel:8888088140" 
+                    href="tel:07683007443" 
                     className="text-gray-700 dark:text-gold/80 font-inter hover:text-gold transition-colors duration-300 text-lg"
                   >
-                    8888088140
+                    076830 07443
                   </a>
                 </div>
               </div>
@@ -388,20 +387,18 @@ export default function ContactPage() {
               viewport={{ once: true }}
               className="bg-gradient-to-br from-gold/20 to-maroon/20 rounded-2xl p-8 h-64 flex items-center justify-center"
             >
-              <div className="text-center">
-                <MapPin size={64} className="text-maroon mx-auto mb-4" />
-                <h3 className="text-xl font-playfair font-semibold text-maroon dark:text-gold mb-2">
-                  Google Maps
-                </h3>
-                <p className="text-gray-600 dark:text-gold/70 font-inter mb-4">
-                  Interactive map will be embedded here
-                </p>
-                <a
-                  href="/visit-us"
-                  className="btn-luxury bg-maroon text-gold px-6 py-3 rounded-full text-sm font-inter font-semibold hover:bg-gold hover:text-maroon transition-all duration-300"
-                >
-                  Get Directions
-                </a>
+              <div className="w-full h-full aspect-video rounded-lg overflow-hidden">
+                {/* Google Maps iframe for Dwarkadheesh Jewellers */}
+                <iframe
+                  src="https://www.google.com/maps?q=Shop+No.+G-5+G-6,+Plot+No.+2,+H.L+Galeria,+Sector+12,+Ashirwad+Chowk,+Dwarka,+New+Delhi,+Delhi+110075&output=embed"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen={true}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Dwarkadheesh Jewellers Map"
+                ></iframe>
               </div>
             </motion.div>
           </div>
@@ -426,7 +423,7 @@ export default function ContactPage() {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <motion.a
-                href="tel:8888088140"
+                href="tel:07683007443"
                 className="btn-luxury bg-gold text-maroon px-8 py-4 rounded-full text-lg font-inter font-semibold shadow-gold hover:shadow-xl transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -435,7 +432,7 @@ export default function ContactPage() {
                 Call Now
               </motion.a>
               <motion.a
-                href="https://wa.me/918888088140"
+                href="https://wa.me/917683007443"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-luxury bg-transparent border-2 border-gold text-gold px-8 py-4 rounded-full text-lg font-inter font-semibold hover:bg-gold hover:text-maroon transition-all duration-300"

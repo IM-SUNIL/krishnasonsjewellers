@@ -90,10 +90,10 @@ export default function AboutPage() {
             className="text-center"
           >
             <h1 className="text-5xl md:text-6xl font-playfair font-bold mb-6">
-              About Priyanka Jewellers
+              About Dwarkadheesh Jewellers
             </h1>
             <p className="text-xl md:text-2xl font-inter text-gold/90 max-w-3xl mx-auto">
-              Pune&apos;s most trusted jeweller for generations, where tradition meets contemporary elegance
+              New Delhi's most trusted jeweller for generations, where tradition meets contemporary elegance
             </p>
           </motion.div>
         </div>
@@ -114,16 +114,16 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-6 text-lg font-inter text-gray-700 dark:text-gold/80">
                 <p>
-                  Founded in 1998, Priyanka Jewellers began as a small family-owned jewellery store with a simple mission: to provide authentic, high-quality jewellery to the people of Pune.
+                  Founded in [Year], Dwarkadheesh Jewellers began as a small family-owned jewellery store with a simple mission: to provide authentic, high-quality jewellery to the people of Dwarka, New Delhi.
                 </p>
                 <p>
-                  Over the past 25+ years, we have grown from a modest shop to one of Pune&apos;s most trusted jewellers, serving thousands of satisfied customers and creating beautiful memories through our exquisite jewellery pieces.
+                  Over the years, we have grown from a modest shop to one of New Delhi's most trusted jewellers, serving thousands of satisfied customers and creating beautiful memories through our exquisite jewellery pieces.
                 </p>
                 <p>
                   We specialize in gold, diamond, and custom bridal jewellery, offering BIS Hallmark assurance on all our products. Our expert craftsmen and designers work tirelessly to create pieces that blend traditional Indian aesthetics with contemporary designs.
                 </p>
                 <p>
-                  Today, located in the prestigious Vision One Mall, we continue to uphold the values of trust, authenticity, and excellence that have been the cornerstone of our success for over two decades.
+                  Today, located at Shop No. G-5 G-6, Plot No. 2, H.L Galeria, Sector 12, Ashirwad Chowk, Dwarka, New Delhi, we continue to uphold the values of trust, authenticity, and excellence that have been the cornerstone of our success.
                 </p>
               </div>
             </motion.div>

@@ -146,13 +146,14 @@ export default function HomePage() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-5xl md:text-7xl font-playfair font-bold mb-6 leading-tight">
-              Priyanka Jewellers
+              Dwarkadheesh Jewellers
             </h1>
             <p className="text-xl md:text-2xl font-inter mb-8 text-gold/90">
-              Where Elegance Meets Excellence
+              We Sell the most beautiful forms of Memories
             </p>
             <p className="text-lg md:text-xl mb-12 text-white/90 font-inter max-w-2xl mx-auto">
-              Pune&apos;s most trusted jeweller for generations. Specializing in gold, diamond, and custom bridal jewellery with BIS Hallmark assurance.
+              Shop No. G-5 G-6, Plot No. 2, H.L Galeria, Sector 12, Ashirwad Chowk, Dwarka, New Delhi, Delhi 110075. <br />
+              Phone: 076830 07443
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -165,7 +166,7 @@ export default function HomePage() {
                 Explore Our Collection
               </motion.button>
               <motion.a
-                href="tel:8888088140"
+                href="tel:07683007443"
                 className="btn-luxury bg-transparent border-2 border-gold text-gold px-8 py-4 rounded-full text-lg font-inter font-semibold hover:bg-gold hover:text-maroon transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -359,7 +360,7 @@ export default function HomePage() {
               Visit Our Store
             </h2>
             <p className="text-xl font-inter text-gray-700 dark:text-gold/80 max-w-3xl mx-auto">
-              Experience luxury in person at our beautiful store
+              Experience luxury in person at our beautiful store in Dwarka, New Delhi
             </p>
           </motion.div>
 
@@ -380,7 +381,7 @@ export default function HomePage() {
                       Location
                     </h3>
                     <p className="text-gray-600 dark:text-gold/70 font-inter">
-                      Vision One Mall, Bhumkar Chowk Rd, Tathawade, Pune, Maharashtra 411057
+                      Shop No. G-5 G-6, Plot No. 2, H.L Galeria, Sector 12, Ashirwad Chowk, Dwarka, New Delhi, Delhi 110075
                     </p>
                   </div>
                 </div>
@@ -393,8 +394,8 @@ export default function HomePage() {
                     <h3 className="text-xl font-playfair font-semibold text-maroon dark:text-gold">
                       Phone
                     </h3>
-                    <a href="tel:8888088140" className="text-gray-600 dark:text-gold/70 font-inter hover:text-gold transition-colors duration-300">
-                      8888088140
+                    <a href="tel:07683007443" className="text-gray-600 dark:text-gold/70 font-inter hover:text-gold transition-colors duration-300">
+                      076830 07443
                     </a>
                   </div>
                 </div>
@@ -431,13 +432,18 @@ export default function HomePage() {
               viewport={{ once: true }}
               className="bg-white dark:bg-[#181010] rounded-2xl p-6 shadow-luxury"
             >
-              <div className="aspect-video bg-gradient-to-br from-gold/20 to-maroon/20 rounded-lg flex items-center justify-center">
-                <div className="text-center">
-                  <MapPin size={48} className="text-maroon mx-auto mb-4" />
-                  <p className="text-maroon dark:text-gold font-inter">
-                    Google Maps will be embedded here
-                  </p>
-                </div>
+              <div className="aspect-video rounded-lg overflow-hidden">
+                {/* Google Maps iframe for Dwarkadheesh Jewellers */}
+                <iframe
+                  src="https://www.google.com/maps?q=Shop+No.+G-5+G-6,+Plot+No.+2,+H.L+Galeria,+Sector+12,+Ashirwad+Chowk,+Dwarka,+New+Delhi,+Delhi+110075&output=embed"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen={true}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Dwarkadheesh Jewellers Map"
+                ></iframe>
               </div>
             </motion.div>
           </div>
@@ -462,7 +468,7 @@ export default function HomePage() {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <motion.a
-                href="tel:8888088140"
+                href="tel:07683007443"
                 className="btn-luxury bg-gold text-maroon px-8 py-4 rounded-full text-lg font-inter font-semibold shadow-gold hover:shadow-xl transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -471,7 +477,7 @@ export default function HomePage() {
                 Call Now
               </motion.a>
               <motion.a
-                href="https://wa.me/918888088140"
+                href="https://wa.me/917683007443"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-luxury bg-transparent border-2 border-gold text-gold px-8 py-4 rounded-full text-lg font-inter font-semibold hover:bg-gold hover:text-maroon transition-all duration-300"

@@ -6,12 +6,12 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Phone, MapPin, Clock, Instagram, Facebook, MessageCircle } from "lucide-react";
 
+// Update font imports and variables as needed for luxury look
 const playfair = Playfair_Display({
   variable: "--font-playfair",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800", "900"],
 });
-
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -44,10 +44,11 @@ function DarkModeToggle() {
   );
 }
 
+// WhatsApp floating button with correct number
 function WhatsAppWidget() {
   return (
     <motion.a
-      href="https://wa.me/918888088140"
+      href="https://wa.me/917683007443" // <-- Update to Dwarkadheesh Jewellers number
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition-all duration-300 hover:scale-110"
@@ -70,28 +71,30 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <title>Priyanka Jewellers - Where Elegance Meets Excellence</title>
-        <meta name="description" content="Pune's most trusted jeweller for generations. Specializing in gold, diamond, and custom bridal jewellery with BIS Hallmark assurance." />
-        <meta name="keywords" content="jewellery, gold, diamond, bridal sets, Pune, Priyanka Jewellers, Vision One Mall" />
-        <meta name="author" content="Priyanka Jewellers" />
-        <meta property="og:title" content="Priyanka Jewellers - Where Elegance Meets Excellence" />
-        <meta property="og:description" content="Pune's most trusted jeweller for generations. Specializing in gold, diamond, and custom bridal jewellery." />
+        {/* SEO Meta Tags for Dwarkadheesh Jewellers */}
+        <title>Dwarkadheesh Jewellers - We Sell the most beautiful forms of Memories</title>
+        <meta name="description" content="Dwarkadheesh Jewellers, Dwarka, New Delhi - Premium Gold, Diamond, and Bridal Jewellery. Trusted since establishment. Shop No. G-5 G-6, Plot No. 2, H.L Galeria, Sector 12, Ashirwad Chowk, Dwarka, New Delhi, Delhi 110075. Phone: 076830 07443" />
+        <meta name="keywords" content="jewellery, gold, diamond, bridal, Dwarka, New Delhi, Dwarkadheesh Jewellers, HL Galeria" />
+        <meta name="author" content="Dwarkadheesh Jewellers" />
+        <meta property="og:title" content="Dwarkadheesh Jewellers - We Sell the most beautiful forms of Memories" />
+        <meta property="og:description" content="Premium Gold, Diamond, and Bridal Jewellery in Dwarka, New Delhi. Trusted since establishment." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://priyankajewellers.com" />
+        <meta property="og:url" content="https://dwarkadheeshjewellers.com" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
       <body className={`${playfair.variable} ${inter.variable} antialiased bg-white text-[#3d1f1f] font-sans dark:bg-[#181010] dark:text-gold`}>
+        {/* Header with updated branding and tagline */}
         <header className="sticky top-0 z-50 bg-white/95 dark:bg-maroon/95 backdrop-blur-md border-b border-gold/20 shadow-lg">
           <nav className="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
             <Link href="/" className="flex items-center gap-3 group">
               <div className="w-10 h-10 bg-gradient-to-br from-gold to-yellow-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                <span className="text-maroon font-bold text-lg">PJ</span>
+                <span className="text-maroon font-bold text-lg">DJ</span>
               </div>
               <div>
-                <span className="text-2xl font-playfair font-bold text-maroon dark:text-gold tracking-wide">Priyanka Jewellers</span>
-                <p className="text-xs text-gray-600 dark:text-gold/70 font-inter">Where Elegance Meets Excellence</p>
+                <span className="text-2xl font-playfair font-bold text-maroon dark:text-gold tracking-wide">Dwarkadheesh Jewellers</span>
+                <p className="text-xs text-gray-600 dark:text-gold/70 font-inter">We Sell the most beautiful forms of Memories</p>
               </div>
             </Link>
             <ul className="hidden md:flex gap-8 text-lg font-medium font-inter">
@@ -117,22 +120,25 @@ export default function RootLayout({
               </Link></li>
             </ul>
             <div className="flex items-center gap-4">
-              <a href="tel:8888088140" className="hidden sm:flex items-center gap-2 text-maroon dark:text-gold hover:text-gold transition-colors duration-300">
+              {/* Update phone number for quick call */}
+              <a href="tel:07683007443" className="hidden sm:flex items-center gap-2 text-maroon dark:text-gold hover:text-gold transition-colors duration-300">
                 <Phone size={18} />
-                <span className="font-inter font-medium">8888088140</span>
+                <span className="font-inter font-medium">076830 07443</span>
               </a>
               <DarkModeToggle />
             </div>
           </nav>
         </header>
         <main className="min-h-[80vh]">{children}</main>
+        {/* Footer with updated branding, address, and social icons */}
         <footer className="bg-gradient-to-b from-maroon to-[#600000] text-gold py-12 shadow-inner dark:bg-gradient-to-b dark:from-[#181010] dark:to-[#0f0a0a]">
           <div className="max-w-7xl mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
               <div>
-                <h3 className="text-2xl font-playfair font-bold mb-4">Priyanka Jewellers</h3>
-                <p className="text-gold/80 font-inter mb-4">Where Elegance Meets Excellence</p>
+                <h3 className="text-2xl font-playfair font-bold mb-4">Dwarkadheesh Jewellers</h3>
+                <p className="text-gold/80 font-inter mb-4">We Sell the most beautiful forms of Memories</p>
                 <div className="flex gap-4">
+                  {/* Update social links as needed */}
                   <a href="#" className="text-gold hover:text-white transition-colors duration-300">
                     <Instagram size={24} />
                   </a>
@@ -155,11 +161,11 @@ export default function RootLayout({
                 <div className="space-y-3 font-inter">
                   <div className="flex items-center gap-2 text-gold/80">
                     <MapPin size={16} />
-                    <span>Vision One Mall, Bhumkar Chowk Rd, Tathawade, Pune, Maharashtra 411057</span>
+                    <span>Shop No. G-5 G-6, Plot No. 2, H.L Galeria, Sector 12, Ashirwad Chowk, Dwarka, New Delhi, Delhi 110075</span>
                   </div>
                   <div className="flex items-center gap-2 text-gold/80">
                     <Phone size={16} />
-                    <a href="tel:8888088140" className="hover:text-gold transition-colors duration-300">8888088140</a>
+                    <a href="tel:07683007443" className="hover:text-gold transition-colors duration-300">076830 07443</a>
                   </div>
                   <div className="flex items-center gap-2 text-gold/80">
                     <Clock size={16} />
@@ -171,7 +177,7 @@ export default function RootLayout({
                 <h4 className="text-lg font-playfair font-semibold mb-4">Trust & Quality</h4>
                 <div className="space-y-2 font-inter text-gold/80">
                   <p>✓ BIS Hallmark Certified</p>
-                  <p>✓ 25+ Years of Trust</p>
+                  <p>✓ Years of Trust</p>
                   <p>✓ Custom Designs</p>
                   <p>✓ Expert Consultation</p>
                 </div>
@@ -179,7 +185,7 @@ export default function RootLayout({
             </div>
             <div className="border-t border-gold/20 pt-8 text-center">
               <p className="font-inter text-gold/80">
-                Priyanka Jewellers © {new Date().getFullYear()} • Website designed by Sunil Singh 😎
+                Dwarkadheesh Jewellers © {new Date().getFullYear()} • Website designed by Sunil Singh 😎
               </p>
             </div>
           </div>
