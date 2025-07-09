@@ -191,14 +191,7 @@ export default function CollectionPage() {
                     <p className="text-gray-600 dark:text-gold/70 font-inter mb-4">
                       {product.description}
                     </p>
-                    <div className="flex items-center justify-between mb-4">
-                      <span className="text-2xl font-playfair font-bold text-maroon dark:text-gold">
-                        {product.price}
-                      </span>
-                      <span className="text-sm text-gray-500 dark:text-gold/50 font-inter">
-                        {product.weight}
-                      </span>
-                    </div>
+                    <div className="mb-4"></div>
                     <div className="flex gap-2">
                       <button className="flex-1 bg-maroon text-gold px-4 py-2 rounded-full text-sm font-inter font-semibold hover:bg-gold hover:text-maroon transition-all duration-300">
                         Enquire Now
@@ -276,14 +269,7 @@ export default function CollectionPage() {
                     <p className="text-sm text-gray-600 dark:text-gold/70 font-inter mb-3 line-clamp-2">
                       {product.description}
                     </p>
-                    <div className="flex items-center justify-between mb-3">
-                      <span className="text-lg font-playfair font-bold text-maroon dark:text-gold">
-                        {product.price}
-                      </span>
-                      <span className="text-xs text-gray-500 dark:text-gold/50 font-inter">
-                        {product.weight}
-                      </span>
-                    </div>
+                    <div className="mb-3"></div>
                     <div className="flex gap-2">
                       <button className="flex-1 bg-maroon text-gold px-3 py-2 rounded-full text-sm font-inter font-semibold hover:bg-gold hover:text-maroon transition-all duration-300">
                         Enquire
